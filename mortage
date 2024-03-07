@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Mar  7 13:16:53 2024
+
+@author: sathw
+"""
+
+# Customer's information
+months_working = int(input("Enter the number of months working for the same employer: "))
+salary = float(input("Enter the monthly salary: "))
+requested_mortgage = float(input("Enter the requested mortgage amount: "))
+
+# Check if both conditions are satisfied
+if months_working > 6 and salary >= 0.01 * requested_mortgage:
+    print("Congratulations! Your mortgage request is accepted.")
+else:
+    print("Sorry, your mortgage request is denied.")
